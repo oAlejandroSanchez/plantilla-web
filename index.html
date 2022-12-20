@@ -1,0 +1,145 @@
+<!-- Plantilla de pagina web con Bootstrap 5.0.2 -->
+
+<html>
+
+<head>
+    <title>
+        Esto es una plantilla
+    </title>
+
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+
+    <style>
+        /* Características de la imagen del Header */
+        .imagen-completa {
+            width: 100%;
+            /* Para el largo de la imagen */
+            height: 15vw;
+            /* Para lo alto de la imagen */
+        }
+
+        /* Características del texto */
+        .texto {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Este es el Header de la pagina principal -->
+    <div class="container-fluid" style="display: contents;">
+        <img src="./images/imagen_prueba.jpg" class="imagen-completa" alt="Banner">
+    </div>
+
+    <!-- Aquí va una barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Esto es para cargar un modal simple -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var myModal = document.getElementById('exampleModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
+
+    <!-- Aquí va el resto de la pagina -->
+    <div class="container" style="margin-top: 1.5vw;">
+        <p class="texto">
+            Lorem ipsum dolor sit amet. Aut molestiae voluptatibus et odit excepturi ut sint earum sed illo
+            reprehenderit sit possimus quia et quos vitae. Et impedit neque non eligendi possimus est consectetur
+            dignissimos qui obcaecati blanditiis 33 voluptatem eligendi eos ipsum officia eum unde autem. Et minima
+            cumque qui alias inventore ut laborum alias. Eos rerum voluptatem ex sunt ducimus ut voluptatem tempore At
+            totam odio qui Quis porro non Quis fuga.
+
+            Nam explicabo sint in repudiandae eligendi aut quasi architecto aut ipsam eaque non eligendi voluptatem eum
+            quis Quis qui ullam adipisci. Est amet repellat qui similique iusto qui minima enim in totam quia.
+
+            Et libero commodi aut modi similique non omnis voluptatem et explicabo veniam id dolorem nulla et dolor quis
+            qui reprehenderit dignissimos. Qui quas rerum ut blanditiis nisi eos unde eligendi sed voluptatem asperiores
+            ad optio laudantium. Qui quos recusandae non ducimus consequatur eum sint autem qui facere modi. Ut
+            obcaecati laborum aut dignissimos consequatur in corporis aperiam est enim ipsum cum alias aliquid.
+        </p>
+
+        <p class="texto">
+            Lorem ipsum dolor sit amet. Aut molestiae voluptatibus et odit excepturi ut sint earum sed illo
+            reprehenderit sit possimus quia et quos vitae. Et impedit neque non eligendi possimus est consectetur
+            dignissimos qui obcaecati blanditiis 33 voluptatem eligendi eos ipsum officia eum unde autem. Et minima
+            cumque qui alias inventore ut laborum alias. Eos rerum voluptatem ex sunt ducimus ut voluptatem tempore At
+            totam odio qui Quis porro non Quis fuga.
+
+            Nam explicabo sint in repudiandae eligendi aut quasi architecto aut ipsam eaque non eligendi voluptatem eum
+            quis Quis qui ullam adipisci. Est amet repellat qui similique iusto qui minima enim in totam quia.
+
+            Et libero commodi aut modi similique non omnis voluptatem et explicabo veniam id dolorem nulla et dolor quis
+            qui reprehenderit dignissimos. Qui quas rerum ut blanditiis nisi eos unde eligendi sed voluptatem asperiores
+            ad optio laudantium. Qui quos recusandae non ducimus consequatur eum sint autem qui facere modi. Ut
+            obcaecati laborum aut dignissimos consequatur in corporis aperiam est enim ipsum cum alias aliquid.
+        </p>
+    </div>
+
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
