@@ -3,6 +3,7 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>
         Esto es una plantilla
     </title>
@@ -77,15 +78,19 @@
     </nav>
 
     <!-- Esto es para cargar un modal simple -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade" id="exampleModal" name="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Se puede agregar un título</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <img 
+                    src="./images/imagen_prueba2.jpg" 
+                    class="img-fluid"
+                    alt="Prueba 2">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -96,12 +101,10 @@
     </div>
 
     <script>
-        var myModal = document.getElementById('exampleModal')
-        var myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', function () {
-            myInput.focus()
-        })
+        /* Este script permite mostrar al modal una vez que se carga la pagina */
+        window.onload = function () {
+            $('#exampleModal').modal('show');
+        }; 
     </script>
 
     <!-- Aquí va el resto de la pagina -->
@@ -139,7 +142,9 @@
         </p>
     </div>
 
+    <!-- Se pueden agregar los elementos de JS hasta el final del archivo -->
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="./jquery-3.6.2.js"></script>
 </body>
 
 </html>
